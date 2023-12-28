@@ -10,6 +10,46 @@
     <title>Courier request form</title>
   </head>
   <body>
-    <h4 class="bg-red-500">hello</h4>
+   <div class="bg-indigo-900 min-h-screen p-10">
+    <div class="bg-white rounded p-5 max-w-xl mx-auto ">
+      <h4 class="font-semibold text-xl"> Request a Courier Pickup!</h4>
+      <!-- creating a form -->
+      <div class="my-5 space-y-5">
+        <div class="grid grid-cols-2 gap-5">
+          <!-- name input -->
+        <input type="text" class="form-input" placeholder="name">
+        <!-- mobile-no input -->
+        <input type="text" min="0" class="form-input" placeholder="phone number">
+        </div>
+        <!-- pick-up date -->
+        <input type="datetime-local" min="0" class="form-input" placeholder="pickup date">
+        <!-- pick-up address -->
+        <textarea name="pickup-area" id="pickup-area" cols="30" rows="5" placeholder="Enter your pickup-area" class="form-input"></textarea>
+        <button type="submit" class="px-3 py-1 bg-indigo-500 w-full hover:bg-indig0-600 text-white">Create pick-up</button>
+      </div>
+    </div>
+
+<!-- second block -->
+    <div class="bg-white rounded p-5 max-w-xl mx-auto mt-10">
+      <h4 class="font-semibold text-xl"> Courier Requests</h4>
+      <!-- creating a table -->
+      <div class="my-5 space-y-5">
+       <table class="table table-fixed w-full">
+        <tr>
+          <th class="px-2 py-1 border">Customer</th>
+          <th class="px-2 py-1 border">Pickup Date</th>
+          <th class="px-2 py-1 border">Address</th>
+          <th class="px-2 py-1 border w-20">Options</th>
+        </tr>
+        <tr>
+          <td class="px-2 py-1 border">Miss. Akalya</td>
+          <td class="px-2 py-1 border">25 Dec 23</td>
+          <td class="px-2 py-1 border">Dubai</td>
+          <td class="px-2 py-1 border"><button type="button" class="px-2 py-1 bg-red-500 hover:bg-red-600">Delete</button></td>
+        </tr>
+       </table>
+      </div>
+    </div>
+   </div>
   </body>
 </html>
